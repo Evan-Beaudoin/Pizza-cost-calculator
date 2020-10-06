@@ -1,3 +1,10 @@
+#Created by: Evan
+#Created on: Oct. 2020
+
+#This program calculates the cost of making a pizza
+
+
+
 diameter = float(input("Enter the diameter of the pizza you would like (inch): "))
 LABOUR_COST = 0.75
 RENT = 1
