@@ -7,11 +7,12 @@
 
 diameter = float(input("Enter the diameter of the pizza you would like (inch): "))
 LABOUR_COST = 0.75
-RENT = 1
-HST_ONTARIO_TAX = 1.13
-materials=  0.5 * diameter
+RENT_COST = 1
+HST = 1.13
+MATERIALS =  0.5
 
-cost_of_pizza_1 = (materials + RENT + LABOUR_COST) * 1.13
-cost_of_pizza_2 = round(cost_of_pizza_1, 2)
+subtotal_pizza_cost = (RENT_COST + LABOUR_COST+(MATERIALS * diameter)) * 1.13
 
-print("Your", diameter,"inch pizza costs $",cost_of_pizza_2) 
+total_pizza_cost = round(subtotal_pizza_cost, 2)
+
+print("Your", diameter,"inch pizza costs $",total_pizza_cost) 
